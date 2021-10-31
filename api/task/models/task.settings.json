@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "name": "Task",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "default": "Task Name",
+      "unique": true
+    },
+    "Description": {
+      "type": "text",
+      "default": "Description Details",
+      "required": true,
+      "unique": true
+    },
+    "XP": {
+      "type": "integer",
+      "default": 10,
+      "required": true
+    },
+    "Date_Creation": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
